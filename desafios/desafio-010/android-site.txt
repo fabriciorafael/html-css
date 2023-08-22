@@ -1,3 +1,4 @@
+[SITE]
 Curiosidades de Tecnologia
 
 Tudo aquilo que você quis saber sobre o mundo Tech, em um único lugar

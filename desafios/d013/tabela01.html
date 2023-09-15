@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela01</title>
+    <style>
+        body {
+            background-color: rgba(59, 58, 58, 0.178);
+            margin: 50vh;
+    
+        }
+
+        table {
+            
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 2px 2px ; color:rgba(22, 20, 20, 0.226);
+            border-radius: 10px;
+            z-index: -1;
+            transition: all 1.0s;
+            filter: blur(0.7px);
+            border-color: rgb(51, 32, 32);
+            
+            
+
+        } 
+        
+        td:hover{
+            transform: scale(1.25,1.25);
+            
+        }
+        
+        td:hover::after {
+            opacity: 1;
+        }
+        
+        
+        </style>
+        </head>
+        
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>

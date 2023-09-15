@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
 
@@ -20,10 +21,35 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
         thead, tfoot {
             background-color: gray;
             color: white;
 
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;    
+
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -173,6 +199,12 @@
 
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, delectus nulla nobis voluptatibus magnam ipsa! Id dolorum labore modi non iure ipsam dicta animi, veritatis quo accusamus totam, incidunt nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus. Est sint autem porro odit recusandae nihil voluptatem doloribus, temporibus, reprehenderit fuga dolor hic laudantium inventore tempora accusantium dolorum ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, pariatur libero, nostrum corrupti accusantium amet harum veritatis repellat quam unde vero et quis, necessitatibus consequuntur molestias quaerat eaque magnam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, possimus autem. Ad, incidunt quae quibusdam facere ipsum expedita maxime perferendis eius nulla velit eaque commodi optio, dicta, hic sequi minima.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, delectus nulla nobis voluptatibus magnam ipsa! Id dolorum labore modi non iure ipsam dicta animi, veritatis quo accusamus totam, incidunt nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus. Est sint autem porro odit recusandae nihil voluptatem doloribus, temporibus, reprehenderit fuga dolor hic laudantium inventore tempora accusantium dolorum ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, pariatur libero, nostrum corrupti accusantium amet harum veritatis repellat quam unde vero et quis, necessitatibus consequuntur molestias quaerat eaque magnam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, possimus autem. Ad, incidunt quae quibusdam facere ipsum expedita maxime perferendis eius nulla velit eaque commodi optio, dicta, hic sequi minima.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, delectus nulla nobis voluptatibus magnam ipsa! Id dolorum labore modi non iure ipsam dicta animi, veritatis quo accusamus totam, incidunt nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus. Est sint autem porro odit recusandae nihil voluptatem doloribus, temporibus, reprehenderit fuga dolor hic laudantium inventore tempora accusantium dolorum ut! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, pariatur libero, nostrum corrupti accusantium amet harum veritatis repellat quam unde vero et quis, necessitatibus consequuntur molestias quaerat eaque magnam sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, possimus autem. Ad, incidunt quae quibusdam facere ipsum expedita maxime perferendis eius nulla velit eaque commodi optio, dicta, hic sequi minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam ad natus impedit! Mollitia, eos. Officiis impedit vel tempore quos ut, voluptatem adipisci voluptates soluta nostrum molestias neque autem dolores corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquid, eveniet, autem voluptate possimus optio quod soluta earum, totam fuga libero id. Dolor officia commodi eius, rem ipsum velit quasi!</p>
+
     
 </body>
 </html>
